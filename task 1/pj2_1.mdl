@@ -1,0 +1,88 @@
+{UTF-8}
+interest=
+	INTEREST RATE*Savings
+	~	
+	~		|
+
+INTEREST RATE=
+	0.05
+	~	
+	~		|
+
+Savings= INTEG (
+	interest,
+		100)
+	~	
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 100
+	~	Year
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Year
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP 
+	~	Year [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 0.25
+	~	Year [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|-1--1--1|96,96,100,0
+10,1,Savings,340,212,40,20,3,3,0,0,0,0,0,0
+12,6,48,136,205,10,8,0,3,0,0,-1,0,0,0
+1,8,10,1,4,0,0,22,0,0,0,-1--1--1,,1|(264,205)|
+1,9,10,6,100,0,0,22,0,0,0,-1--1--1,,1|(181,205)|
+11,10,0,223,205,6,8,34,3,0,0,1,0,0,0
+10,11,interest,223,224,24,11,40,3,0,0,-1,0,0,0
+10,12,INTEREST RATE,141,278,60,11,8,3,0,0,0,0,0,0
+1,13,1,11,1,0,0,0,0,64,0,-1--1--1,,1|(283,252)|
+1,14,12,11,1,0,0,0,0,64,0,-1--1--1,,1|(156,250)|
+///---\\\
+:L<%^E!@
+1:run2.vdf
+1:Current.vdf
+9:run2
+22:$,Dollar,Dollars,$s
+22:Hour,Hours
+22:Month,Months
+22:Person,People,Persons
+22:Unit,Units
+22:Week,Weeks
+22:Year,Years
+22:Day,Days
+23:0
+15:0,0,0,0,0,0
+19:100,0
+27:2,
+34:0,
+4:Time
+5:Savings
+35:Date
+36:YYYY-MM-DD
+37:2000
+38:1
+39:1
+40:0
+41:0
+42:1
+24:0
+25:100
+26:100
